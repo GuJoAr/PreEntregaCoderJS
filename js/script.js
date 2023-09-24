@@ -1,5 +1,5 @@
 
-function juegoAdivinanza(){
+/* function juegoAdivinanza(){
     let nombreUsuario = prompt("Por favor, ingresa tu nombre de usuario:");
     let respuestaCorrecta = "perro";
     let intentos = 3;
@@ -33,4 +33,4 @@ function juegoAdivinanza(){
     }
 }
 juegoAdivinanza();
-alert('Espero que hayas aprendido algo. Saludos');
+alert('Espero que hayas aprendido algo. Saludos');  */
