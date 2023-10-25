@@ -10,43 +10,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- link al CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- link al JS -->
-    <script defer src="js/script.js"></script>
     <title>Adivinanza con JS</title>
 </head>
 <body>
     <header>
-        <!-- imagen con animales para las adivinanzas -->
-    </header>
-    <main>
         <h1>Adivinanza con JavaScript</h1>
-        <section>
-            <div class="conteiner">
-                <div class="juegos">
-                    <img src="assets/image/gato01.png" class="" alt="...">
-                    <img src="assets/image/leon01.png" class="" alt="...">
-                    <img src="assets/image/perro01.png" class="" alt="...">
-                </div>
-                <div class="opciones">
-                    <p class="">Adivina que animal dice "miau"</p>
-                    <div class="opcion">
-                        <div class="letra">A</div>
-                        <div class="nombre">Gato</div>
-                    </div>
-                    <div class="opcion">
-                        <div class="letra">B</div>
-                        <div class="nombre">Leon</div>
-                    </div>
-                    <div class="opcion">
-                        <div class="letra">C</div>
-                        <div class="nombre">Perro</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="loginContainer">
+            <p>Por favor, ingresa tu nombre de usuario:</p>
+            <input type="text" id="nickName" placeholder="Nombre de Usuario">
+            <button class="btn" id="submitButton">Ingresar</button>
+        </div>
+        <div id="mensaje" class="hidden">
+            <h2 id="texto">Bienvenido <span id="displayedName"></span></h2>
+        </div>        
+    </header>
+    <main id="root">
+        
     </main>
     <footer>
         Desarrollado para PreEntrega de JavaScript
     </footer>
+    <!-- link al JS -->
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
