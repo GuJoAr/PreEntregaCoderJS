@@ -1,6 +1,6 @@
 
 export const Card = (props) => {
-    let { question, options0, options1, options2, img0, img1, img2, img3, answer } = props;
+    let { question, options0, options1, options2, img0, img1, img2, img3, answer, name0, name1, name2, name3, } = props;
     let div = document.createElement('div');
     div.setAttribute('class', 'opciones');
     // Contador de intentos
@@ -59,10 +59,10 @@ export const Card = (props) => {
             <h3><button>${options0}</button></h3>
             <h3><button>${options1}</button></h3>
             <h3><button>${options2}</button></h3>
-            <img src="${img0}" alt="imagen de ${img0}" style="display: none;">
-            <img src="${img1}" alt="imagen de ${img1}">
-            <img src="${img2}" alt="imagen de ${img2}">
-            <img src="${img3}" alt="imagen de ${img3}">
+            <img src="${img0}" alt="imagen de ${name0}" style="display: none;">
+            <img src="${img1}" alt="imagen de ${name1}">
+            <img src="${img2}" alt="imagen de ${name2}">
+            <img src="${img3}" alt="imagen de ${name3}">
         </div>
     `;
 
