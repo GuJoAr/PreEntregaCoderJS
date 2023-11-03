@@ -82,3 +82,31 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #191911;
+    background: rgb(0, 255, 13);
+    color: #191911;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #191911;
+    color: #191911;
+    background:  rgb(211, 48, 48);
+}

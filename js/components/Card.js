@@ -1,6 +1,8 @@
+import { showNotification } from "../helpers/showNotification.js";
 
 export const Card = (props) => {
-    let { question, options0, options1, options2, img0, img1, img2, img3, answer, name0, name1, name2, name3, } = props;
+    let { question, options0, options1, options2, img0, img1, img2, img3, answer, name0, name1, name2, name3, answerImg, } = props;
+
     let div = document.createElement('div');
     div.setAttribute('class', 'opciones');
     // Contador de intentos
@@ -35,11 +37,15 @@ export const Card = (props) => {
             div.querySelectorAll('button').forEach(button => {
                 button.disabled = true;
             });
+            // Mostrar un mensaje de respuesta correcta con toastify
+            showNotification(`Correcto, es un ${answerImg}`, 'success');
         } else {
             answerIncorrect++;
             incorrect.textContent = `Incorrectas: ${answerIncorrect}`;
             intentos--;
             intentosElement.textContent = `Intentos: ${intentos}`;
+            // Mostrar un mensaje de respuesta incorrecta con toastify
+            showNotification('Incorrecto, como no te vas a dar cuenta', 'error');
             if (intentos === 0) {
                 // Si se agotaron los 3 intentos incorrectos, deshabilita las opciones
                 div.querySelectorAll('button').forEach(button => {
@@ -48,7 +54,7 @@ export const Card = (props) => {
             }
         }
         if (intentos === 0 || answerCorrect === 3) {
-            // Si se agotaron los intentos o se respondieron 3 preguntas correctamente, el juego ha terminado
+            // Si se agotaron los intentos o se respondieron 3 preguntas correctamente el juego termina
             intentos = 0;
         }
     };

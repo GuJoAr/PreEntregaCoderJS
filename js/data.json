@@ -1,0 +1,35 @@
+[
+    {
+        "question": "¿qué animal dice miau?",
+        "options0": "a) Gato",
+        "options1": "b) Perro",
+        "options2": "c) León",
+        "img0": "./assets/image/perro02.png",
+        "answerImg":"Perro bilingüe",
+        "name0":"dibujo de perrito con anteojos y libros, un perro estudioso",
+        "img1": "./assets/image/gato01.png",
+        "name1":"dibujo de gatito sentado",
+        "img2": "./assets/image/perro01.png",
+        "name2":"dibujo de perrito sentado y con la lengua fuera",
+        "img3": "./assets/image/leon01.png",
+        "name3":"dibujo de león con mirada pensativa",
+        "answer":"b"
+    },
+    {
+        "question": "¿qué animal ganaría una pelea entre?",
+        "options0": "a) Grillo",
+        "options1": "b) Elefante",
+        "options2": "c) Tigre",
+        "img0": "./assets/image/grillo02.png",
+        "answerImg":"Grillo Karateka",
+        "name0":"dibujo de grillo vestido con kimono karate y cinturon negro",
+        "img1": "./assets/image/grillo01.png",
+        "name1":"dibujo de grillo verde con manitas levantadas",
+        "img2": "./assets/image/elefante01.png",
+        "name2":"dibujo de elefante saludando con la trompa",
+        "img3": "./assets/image/tigre01.png",
+        "name3":"dibujo de tigre gruñendo",
+        "answer": "a"
+    }
+]
+

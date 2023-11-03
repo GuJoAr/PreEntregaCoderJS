@@ -1,5 +1,4 @@
 import { CardContainer } from "./components/CardContainer.js";
-import { Adivinanzas } from "./helpers/data.js";
 
 const nicknameInput = document.querySelector("#nickName");
 const welcomeContainer = document.querySelector("#mensaje");
@@ -18,6 +17,19 @@ document.querySelector("#submitButton").addEventListener("click", function() {
 });
 
 export const script = () => {
-    let scriptRoot = document.querySelector('#root');
-    scriptRoot.append(CardContainer({adivinanzas: Adivinanzas}));
+    function getData() {
+        return fetch('./js/data.json')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Hubo problemas para obtener los datos');
+                }
+                return res.json();
+            });
+    }
+    // llama a getData para obtener los datos y luego crea el CardContainer
+    getData()
+        .then(data => {
+            let scriptRoot = document.querySelector('#root');
+            scriptRoot.append(CardContainer({ adivinanzas: data }));
+        });
 }
