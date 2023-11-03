@@ -4,6 +4,13 @@ const nicknameInput = document.querySelector("#nickName");
 const welcomeContainer = document.querySelector("#mensaje");
 const displayedName = document.querySelector("#displayedName");
 
+// Recupera el nombre de usuario del Local Storage (si existe)
+const storedNickname = localStorage.getItem("nickname");
+if (storedNickname) {
+    displayedName.textContent = storedNickname;
+    welcomeContainer.classList.remove("hidden");
+}
+
 // Agrega un evento al botón para mostrar el mensaje de bienvenida
 document.querySelector("#submitButton").addEventListener("click", function() {
     const nickname = nicknameInput.value; // Obtiene el nombre de usuario ingresado
