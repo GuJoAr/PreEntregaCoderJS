@@ -2,7 +2,6 @@ import { showNotification } from "../helpers/showNotification.js";
 
 export const Card = (props) => {
     let { question, options0, options1, options2, img0, img1, img2, img3, answer, name0, name1, name2, name3, answerImg, } = props;
-
     let div = document.createElement('div');
     div.setAttribute('class', 'opciones');
     // Contador de intentos
@@ -38,7 +37,7 @@ export const Card = (props) => {
                 button.disabled = true;
             });
             // Mostrar un mensaje de respuesta correcta con toastify
-            showNotification(`Correcto, es un ${answerImg}`, 'success');
+            showNotification(`Correcto porque es un ${answerImg}`, 'success');
         } else {
             answerIncorrect++;
             incorrect.textContent = `Incorrectas: ${answerIncorrect}`;

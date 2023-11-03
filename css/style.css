@@ -79,8 +79,8 @@ h2 {
     align-items: center;
     justify-content: center;
     width: max-content;
-    height: 50px;
-    font-size: 1.3rem;
+    height: 60px;
+    font-size: 2rem;
     font-weight: bold;
     border-radius: 50px;
     box-shadow: 5px 5px 5px #191911;
@@ -93,8 +93,8 @@ h2 {
     align-items: center;
     justify-content: center;
     width: max-content;
-    height: 50px;
-    font-size: 1.3rem;
+    height: 60px;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 50px;
     box-shadow: 5px 5px 5px #191911;
